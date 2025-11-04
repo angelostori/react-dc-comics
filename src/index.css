@@ -14,16 +14,13 @@ nav div {
   font-size: 12px;
 }
 
-.nav-link:hover {
-  color: #0c7cec;
-}
-
 nav div div {
   padding: 30px 0 30px 0;
   border-bottom: white solid 5px;
 }
 
 nav div div:hover {
+  color: #0c7cec;
   border-bottom: #0c7cec solid 5px;
 }
 
@@ -40,4 +37,39 @@ main section {
 
 .container h3 {
   color: white;
+}
+
+/*FOOTER*/
+/*TOP*/
+.footer-top {
+  background-color: #0c7cec;
+
+  .container {
+    margin: auto;
+    width: 70%;
+    padding: 40px 0 40px 0;
+  }
+
+  ul.nav {
+    color: white;
+  }
+
+  a {
+    color: white;
+    font-size: 12px;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  ul li img {
+    height: 40px;
+  }
 }
