@@ -1,5 +1,4 @@
 import dcLogo from './assets/img/dc-logo.png'
-import './App.css'
 
 function App() {
 
