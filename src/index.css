@@ -42,7 +42,7 @@ main section {
 /*FOOTER*/
 /*TOP*/
 .footer-top {
-  background-color: #0c7cec;
+  background-color: #077ff2;
 
   .container {
     margin: auto;
@@ -71,5 +71,30 @@ main section {
 
   ul li img {
     height: 40px;
+  }
+}
+
+/*MID*/
+.footer-mid {
+  background-image: url("./assets/img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px 0;
+
+  a {
+    color: darkgray;
+    padding: 8px 0;
+    font-size: 11px;
+  }
+
+  .container {
+    margin: auto;
+    width: 70%;
+  }
+
+  ul {
+    gap: 12px;
   }
 }
