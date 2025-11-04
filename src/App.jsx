@@ -7,6 +7,12 @@ import subscriptionsImg from './assets/img/buy-comics-subscriptions.png'
 import dcPowerVisaImg from './assets/img/buy-dc-power-visa.svg'
 
 import footerLogoImg from './assets/img/dc-logo-bg.png'
+
+import facebookLogo from './assets/img/footer-facebook.png'
+import twitterLogo from './assets/img/footer-twitter.png'
+import youtubeLogo from './assets/img/footer-youtube.png'
+import pinterestLogo from './assets/img/footer-pinterest.png'
+import periscopeLogo from './assets/img/footer-periscope.png'
 function App() {
 
   return (
@@ -90,10 +96,27 @@ function App() {
 
         <section className='footer-bottom'>
           <div className="container">
-            <nav class="nav justify-content-center  ">
-              <a class="nav-link" href="#">Active link</a>
-              <a class="nav-link" href="#">Link</a>
-              <a class="nav-link" href="#">Disabled link</a>
+            <nav class="nav justify-content-between">
+              <button type="button">SIGN UP NOW!</button>
+              <div>
+                <label><strong>FOLLOW US</strong></label>
+                <a class="nav-link" href="#">
+                  <img src={facebookLogo} alt="" />
+                </a>
+                <a class="nav-link" href="#">
+                  <img src={twitterLogo} alt="" />
+                </a>
+                <a class="nav-link" href="#">
+                  <img src={youtubeLogo} alt="" />
+                </a>
+                <a class="nav-link" href="#">
+                  <img src={pinterestLogo} alt="" />
+                </a>
+                <a class="nav-link" href="#">
+                  <img src={periscopeLogo} alt="" />
+                </a>
+              </div>
+
             </nav>
           </div>
         </section>

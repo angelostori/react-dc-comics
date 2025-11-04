@@ -1,33 +1,45 @@
 @import url('bootstrap');
 
+/* ===========================
+   GLOBAL
+=========================== */
 body {
   font-family: "Open Sans";
 }
 
-/*HEADER*/
-nav {
+.container {
   width: 70%;
   margin: auto;
 }
 
-nav div {
+/* ===========================
+   HEADER
+=========================== */
+header nav {
+  width: 70%;
+  margin: auto;
+}
+
+header nav div {
   font-size: 12px;
 }
 
-nav div div {
-  padding: 30px 0 30px 0;
-  border-bottom: white solid 5px;
+header nav div div {
+  padding: 30px 0;
+  border-bottom: 5px solid white;
 }
 
-nav div div:hover {
+header nav div div:hover {
   color: #0c7cec;
-  border-bottom: #0c7cec solid 5px;
+  border-bottom-color: #0c7cec;
 }
 
-/*MAIN*/
+/* ===========================
+   MAIN
+=========================== */
 main {
   background-color: black;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 
 main section {
@@ -39,76 +51,113 @@ main section {
   color: white;
 }
 
-/*FOOTER*/
-/*TOP*/
+/* ===========================
+   FOOTER
+=========================== */
+
+/* ---------- TOP ---------- */
 .footer-top {
   background-color: #077ff2;
-
-  .container {
-    margin: auto;
-    width: 70%;
-    padding: 40px 0 40px 0;
-  }
-
-  ul.nav {
-    color: white;
-  }
-
-  a {
-    color: white;
-    font-size: 12px;
-  }
-
-  .nav-link:hover {
-    color: white;
-  }
-
-  ul li {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  ul li img {
-    height: 40px;
-  }
+  color: white;
 }
 
-/*MID*/
+.footer-top .container {
+  padding: 40px 0;
+}
+
+.footer-top a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-top .nav-link:hover {
+  color: white;
+}
+
+.footer-top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-top ul li {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.footer-top ul li img {
+  height: 40px;
+}
+
+/* ---------- MID ---------- */
 .footer-mid {
-  background-image: url("./assets/img/footer-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("./assets/img/footer-bg.jpg") center/cover no-repeat;
   color: white;
   padding: 40px 0;
   height: 440px;
   overflow: hidden;
-
-  img {
-    top: -100px;
-    position: relative;
-  }
-
-  a {
-    color: darkgray;
-    padding: 8px 0;
-    font-size: 11px;
-    font-weight: bold;
-  }
-
-  .container {
-    margin: auto;
-    width: 70%;
-  }
-
-  ul {
-    gap: 12px;
-  }
 }
 
-/*BOTTOM*/
+.footer-mid img {
+  position: relative;
+  top: -100px;
+}
+
+.footer-mid a {
+  color: darkgray;
+  padding: 8px 0;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-mid ul {
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ---------- BOTTOM ---------- */
 .footer-bottom {
   background-color: #212529;
+  color: #077ff2;
+  height: 90px;
+  align-content: center;
+}
 
+.footer-bottom .container {
+  padding: 0;
+}
+
+.footer-bottom .nav {
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
+.footer-bottom .nav div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom button {
+  border: solid 2px #077ff2;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.footer-bottom label {
+  font-size: 15px;
+  font-weight: bolder;
+  color: #077ff2;
+  padding: 0 16px;
+}
+
+.footer-bottom a {
+  padding: 8px;
 }
