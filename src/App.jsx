@@ -88,9 +88,16 @@ function App() {
           </div>
         </section>
 
-        <section className=''>
-
+        <section className='footer-bottom'>
+          <div className="container">
+            <nav class="nav justify-content-center  ">
+              <a class="nav-link" href="#">Active link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Disabled link</a>
+            </nav>
+          </div>
         </section>
+
       </footer>
     </>
   )

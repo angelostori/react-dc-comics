@@ -82,11 +82,19 @@ main section {
   background-repeat: no-repeat;
   color: white;
   padding: 40px 0;
+  height: 440px;
+  overflow: hidden;
+
+  img {
+    top: -100px;
+    position: relative;
+  }
 
   a {
     color: darkgray;
     padding: 8px 0;
     font-size: 11px;
+    font-weight: bold;
   }
 
   .container {
@@ -97,4 +105,10 @@ main section {
   ul {
     gap: 12px;
   }
+}
+
+/*BOTTOM*/
+.footer-bottom {
+  background-color: #212529;
+
 }
