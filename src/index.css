@@ -4,10 +4,7 @@ body {
   font-family: "Open Sans";
 }
 
-header {
-  margin: 1rem 0 1rem 0;
-}
-
+/*HEADER*/
 nav {
   width: 70%;
   margin: auto;
@@ -23,8 +20,24 @@ nav div {
 
 nav div div {
   padding: 30px 0 30px 0;
+  border-bottom: white solid 5px;
 }
 
 nav div div:hover {
   border-bottom: #0c7cec solid 5px;
+}
+
+/*MAIN*/
+main {
+  background-color: black;
+  padding: 20px 0 20px 0;
+}
+
+main section {
+  width: 70%;
+  margin: auto;
+}
+
+.container h3 {
+  color: white;
 }
