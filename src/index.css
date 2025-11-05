@@ -49,6 +49,12 @@ main {
   margin-bottom: 55px;
 }
 
+.jumbotron .btn {
+  position: relative;
+  top: 95%;
+  right: 31%;
+}
+
 .container h3 {
   color: white;
 }

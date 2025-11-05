@@ -5,6 +5,7 @@ export default function Main() {
     return (
         <main>
             <section className="jumbotron">
+                <button type="button" className="btn btn-primary">CURRENT SERIES</button>
             </section>
             <section>
                 <div className="container">
@@ -24,7 +25,7 @@ export default function Main() {
 
                     </div>
 
-                    <button className="btn btn-primary">LOAD MORE</button>
+                    <button type="button" className="btn btn-primary">LOAD MORE</button>
 
                 </div>
             </section>
