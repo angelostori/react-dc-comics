@@ -1,5 +1,6 @@
+import { comics } from "../../../public/comics.js";
+
 export default function Main() {
-    const nomi = [<li>Mario</li>, <li>Luigi</li>, <li>Lucia</li>]
     const menu = [
 
         {
@@ -56,14 +57,21 @@ export default function Main() {
         <main>
             <section>
                 <div className="container">
-                    <h3>===Content Goes Here===</h3>
-                    <ul>
+                    <div className="row">
                         {
-                            nomi.map((nome) =>
-                                <li>{nome}</li>
-                            )
+                            comics.map((comic) => (
+                                <div className="col-2" key={comic.id}>
+                                    <div className="card">
+                                        <img src={comic.thumb} className="card-img-top" alt={comic.description} />
+                                        <div className="card-body">
+                                            <p className="card-title">{comic.series}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
                         }
-                    </ul>
+
+                    </div>
                 </div>
             </section>
 
