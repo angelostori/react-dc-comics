@@ -40,7 +40,13 @@ header nav div div:hover {
 =========================== */
 main {
   background-color: black;
-  padding: 20px 0;
+  padding-bottom: 20px;
+}
+
+.jumbotron {
+  background: url("./assets/img/jumbotron.jpg") top center / cover no-repeat;
+  height: 350px;
+  margin-bottom: 55px;
 }
 
 .container h3 {

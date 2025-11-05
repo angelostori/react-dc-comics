@@ -4,6 +4,8 @@ export default function Main() {
 
     return (
         <main>
+            <section className="jumbotron">
+            </section>
             <section>
                 <div className="container">
                     <div className="row">
