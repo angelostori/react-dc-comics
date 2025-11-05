@@ -91,6 +91,10 @@ main section {
   height: 40px;
 }
 
+.footer-top ul li img#power-visa {
+  height: 25px;
+}
+
 /* ---------- MID ---------- */
 .footer-mid {
   background: url("./assets/img/footer-bg.jpg") center/cover no-repeat;
