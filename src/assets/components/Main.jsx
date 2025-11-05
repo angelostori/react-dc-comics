@@ -21,6 +21,9 @@ export default function Main() {
                         }
 
                     </div>
+
+                    <button className="btn btn-primary">LOAD MORE</button>
+
                 </div>
             </section>
         </main>
