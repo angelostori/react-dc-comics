@@ -47,6 +47,16 @@ main {
   color: white;
 }
 
+main .card {
+  background-color: transparent;
+  border-radius: unset;
+}
+
+main .card-img-top {
+  border-radius: unset;
+  object-fit: fill;
+}
+
 /* ===========================
    FOOTER
 =========================== */
