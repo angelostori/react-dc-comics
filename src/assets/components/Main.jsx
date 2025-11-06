@@ -1,4 +1,5 @@
 import { comics } from "../../../public/comics.js";
+import ComicCard from "./ComicCard.jsx";
 
 export default function Main() {
 
@@ -10,19 +11,14 @@ export default function Main() {
             <section>
                 <div className="container">
                     <div className="row">
-                        {
-                            comics.map((comic) => (
-                                <div className="col-2" key={comic.id}>
-                                    <div className="card">
-                                        <img src={comic.thumb} className="card-img-top" alt={comic.description} />
-                                        <div className="card-body">
-                                            <p className="card-title">{comic.series}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        }
-
+                        {comics.map((comic) => (
+                            <ComicCard
+                                key={comic.id}
+                                thumb={comic.thumb}
+                                description={comic.description}
+                                series={comic.series}
+                            />
+                        ))}
                     </div>
 
                     <button type="button" className="btn btn-primary">LOAD MORE</button>
