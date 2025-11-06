@@ -18,8 +18,8 @@ export default function Footer() {
                         {footerLinks.map((section) => (
                             <li className="nav-item" key={section.id}>
                                 <label><strong>{section.title}</strong></label>
-                                {section.links.map((link) => (
-                                    <a className="nav-link" href={link.href} key={link.text}>
+                                {section.links.map((link, index) => (
+                                    <a className="nav-link" href={link.href} key={index}>
                                         {link.text}
                                     </a>
                                 ))}
