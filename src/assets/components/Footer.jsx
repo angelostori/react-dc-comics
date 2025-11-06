@@ -6,6 +6,8 @@ import youtubeLogo from '../img/footer-youtube.png'
 import pinterestLogo from '../img/footer-pinterest.png'
 import periscopeLogo from '../img/footer-periscope.png'
 
+import footerLinks from '../../../public/footer-links'
+
 export default function Footer() {
 
     return (
@@ -13,46 +15,19 @@ export default function Footer() {
             <section className="footer-mid">
                 <div className="container d-flex justify-content-between">
                     <ul className="nav">
-                        <li className="nav-item">
-                            <label><strong>DC COMICS</strong></label>
-                            <a className="nav-link" href="#">Characters</a>
-                            <a className="nav-link" href="#">Comics</a>
-                            <a className="nav-link" href="#">Movies</a>
-                            <a className="nav-link" href="#">TV</a>
-                            <a className="nav-link" href="#">Games</a>
-                            <a className="nav-link" href="#">Videos</a>
-                            <a className="nav-link" href="#">News</a>
-                            <label><strong>SHOP</strong></label>
-                            <a className="nav-link" href="#">Shop DC</a>
-                            <a className="nav-link" href="#">Shop DC Collectibles</a>
-                        </li>
-
-                        <li className="nav-item">
-                            <label><strong>DC</strong></label>
-                            <a className="nav-link" href="#">Terms Of Use</a>
-                            <a className="nav-link" href="#">Privacy policy(New)</a>
-                            <a className="nav-link" href="#">Ad Choices</a>
-                            <a className="nav-link" href="#">Advertising</a>
-                            <a className="nav-link" href="#">Jobs</a>
-                            <a className="nav-link" href="#">Subscribtions</a>
-                            <a className="nav-link" href="#">Talent Workshops</a>
-                            <a className="nav-link" href="#">CPSC Certificates</a>
-                            <a className="nav-link" href="#">Ratings</a>
-                            <a className="nav-link" href="#">Shop Help</a>
-                            <a className="nav-link" href="#">Contact Us</a>
-                        </li>
-
-                        <li className="nav-item">
-                            <label><strong>SITES</strong></label>
-                            <a className="nav-link" href="#">DC</a>
-                            <a className="nav-link" href="#">MAD Magazine</a>
-                            <a className="nav-link" href="#">DC Kids</a>
-                            <a className="nav-link" href="#">DC Universe</a>
-                            <a className="nav-link" href="#">DC Power Visa</a>
-                        </li>
+                        {footerLinks.map((section) => (
+                            <li className="nav-item" key={section.id}>
+                                <label><strong>{section.title}</strong></label>
+                                {section.links.map((link) => (
+                                    <a className="nav-link" href={link.href} key={link.text}>
+                                        {link.text}
+                                    </a>
+                                ))}
+                            </li>
+                        ))}
                     </ul>
 
-                    <img src={footerLogoImg} alt="" />
+                    <img src={footerLogoImg} alt="DC Logo" />
                 </div>
             </section>
 
